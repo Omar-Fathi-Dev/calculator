@@ -73,7 +73,7 @@ class Program
         string operation;
         while (true)
         {
-            Console.WriteLine("Enter the operation (+, -, *, /):");
+            Console.Write("Enter the operation (+, -, *, /): ");
             operation = Console.ReadLine();
             if (operation == "+" || operation == "-" || operation == "*" || operation == "/")
                 return operation;

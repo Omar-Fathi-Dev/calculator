@@ -35,3 +35,5 @@ The calculator asks the user to:
 5. Choose whether to perform another calculation.
 
 Invalid numeric input and invalid operations are handled by the application.
+## Screenshot
+![Calculator Screenshot](screenshot.png)
