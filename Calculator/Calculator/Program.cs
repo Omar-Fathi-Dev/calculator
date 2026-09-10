@@ -5,11 +5,15 @@ class Program
     static void Main(string[] args)
     {
 
-        string operation = ValidateOperation();
-        Console.WriteLine(operation);
+        
 
     }
 
+
+    static double AddToNumbers(double number1 , double number2)
+    {
+        return number1 + number2;
+    }
 
     static string ValidateOperation()
     {
