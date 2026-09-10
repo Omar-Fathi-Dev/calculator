@@ -11,8 +11,9 @@ class Program
         while (true)
         {
             number1 = ValidateInput("number 1");
-            number2 = ValidateInput("number 2");
             operation = ValidateOperation();
+            number2 = ValidateInput("number 2");
+            
         
             if (operation == "+")
                 Console.WriteLine($"{number1} + {number2} = {AddTwoNumbers(number1, number2)}");
@@ -21,7 +22,14 @@ class Program
             else if (operation == "*")
                 Console.WriteLine($"{number1} * {number2} = {MultiplyTwoNumbers(number1, number2)}");
             else if (operation == "/")
-                Console.WriteLine($"{number1} / {number2} = {DivideTwoNumbers(number1, number2)}");
+            {
+                if(number2 == 0)
+                    Console.WriteLine("Cannot divide by zero. Please enter a non-zero number.");
+                else
+                    Console.WriteLine($"{number1} / {number2} = {DivideTwoNumbers(number1, number2)}");
+
+            }
+                
             
             Console.WriteLine("Do you want to perform another calculation?");
             Console.WriteLine("Press any key to continue, or 'N' to exit."); 
